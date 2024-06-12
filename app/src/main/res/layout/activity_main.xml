@@ -1,152 +1,152 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:padding="20dp"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:orientation="vertical">
-
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:fitsSystemWindows="true">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center">
+        android:orientation="vertical">
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Form"
-            android:textSize="30sp"
-            android:textColor="#2196F3"/>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Name: "
-
-            android:textSize="26sp">
-
+            android:text="UserName:"
+            android:textSize="22sp">
         </TextView>
-
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Enter the name"
-            android:id="@+id/name"
-            android:textSize="24sp"/>
-
+            android:hint="Enter UserName"
+            android:id="@+id/userName">
+        </EditText>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Password: "
-
-            android:textSize="26sp">
-
-        </TextView>
-
-        <EditText
-            android:inputType="textPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Enter the password"
-            android:id="@+id/password"
-            android:textSize="24sp"/>
-
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Address: "
-            android:textSize="26sp">
-
+            android:text="Password:"
+            android:textSize="22sp">
         </TextView>
-
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Enter your address"
-            android:id="@+id/address"
-            android:textSize="24sp"/>
-
+            android:hint="Enter password"
+            android:id="@+id/passw"
+            android:inputType="textPassword">
+        </EditText>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
-
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Gender: "
-            android:textSize="26sp">
-
+            android:text="Address:"
+            android:textSize="22sp">
         </TextView>
-
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Adrdress"
+            android:id="@+id/addr">
+        </EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gender:"
+            android:textSize="22sp">
+        </TextView>
         <RadioGroup
             android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:orientation="horizontal"
-            android:id="@+id/gender"
-            android:layout_height="wrap_content">
+            android:id="@+id/gender">
             <RadioButton
+                android:id="@+id/ma"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/m"
+                android:layout_height="match_parent"
                 android:text="Male"
-                android:textSize="24sp"/>
+                android:textSize="18sp"/>
             <RadioButton
+                android:id="@+id/fe"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/f"
+                android:layout_height="match_parent"
                 android:text="Female"
-                android:textSize="24sp"/>
+                android:textSize="18sp"/>
         </RadioGroup>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Age: "
-            android:textSize="26sp">
-
-        </TextView>
-
-        <EditText
-            android:inputType="number"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Enter the age"
-            android:id="@+id/age"
-            android:textSize="24sp"/>
+            android:text="Date of Birth:"
+            android:textSize="22sp">
+        </TextView>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Select Date of Birth"
+            android:focusable="false"
+            android:id="@+id/dob">
+        </EditText>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:padding="10dp">
-        <Button
-            android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="15px">
+        <TextView
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="24sp"
-            android:text="Submit"
-            android:id="@+id/submit"
-            />
-
+            android:text="Age"
+            android:textSize="22sp">
+        </TextView>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Age"
+            android:inputType="number"
+            android:id="@+id/age">
+        </EditText>
     </LinearLayout>
-    <TextView
-        android:layout_width="wrap_content"
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/result"
-        android:textSize="24sp"
-        />
+        android:orientation="vertical">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:id="@+id/sub">
+        </Button>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:id="@+id/printer">
+        </TextView>
+    </LinearLayout>
 </LinearLayout>
